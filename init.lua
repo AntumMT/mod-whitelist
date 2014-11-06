@@ -1,7 +1,12 @@
 --[[
 -- Whitelist mod by ShadowNinja
+-- Uses dedecated priv and toggle thanks to CWz
 -- License: WTFPL
 --]]
+minetest.register_privilege("whitelist", {
+	description = "may add new names to whitelist.",
+	give_to_singleplayer= false,
+})
 
 local world_path = minetest.get_worldpath()
 local admin = minetest.setting_get("name")
@@ -32,7 +37,7 @@ end
 load_whitelist()
 
 minetest.register_on_prejoinplayer(function(name, ip)
-	if name == "singleplayer" or name == admin or whitelist[name] then
+	if name == "singleplayer" or name == admin or whitelist[name] or minetest.setting_getbool("lockdown") == false then
 		return
 	end
 	return "This server is whitelisted and you are not on the whitelist."
@@ -41,7 +46,7 @@ end)
 minetest.register_chatcommand("whitelist", {
 	params = "{add|remove} <nick>",
 	help = "Manipulate the whitelist",
-	privs = {ban=true},
+	privs = {whitelist=true},
 	func = function(name, param)
 		local action, whitename = param:match("^([^ ]+) ([^ ]+)$")
 		if action == "add" then
