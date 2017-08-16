@@ -1,6 +1,6 @@
 --[[
 -- Whitelist mod by ShadowNinja
--- License: WTFPL
+-- License: CC0
 --]]
 
 local world_path = minetest.get_worldpath()
