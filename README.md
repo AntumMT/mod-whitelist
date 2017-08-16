@@ -11,6 +11,12 @@ This is a simple Minetest mod that adds a player whitelist. Any player names not
     - Adds a username to whitelist & allows access to server.
   - ***/whitelist remove <name>***
     - Removes a username from whitelist & denies access to server.
+- Settings:
+  - ***whitelist.enable***
+    - Enables/Disables denying access to users not on the whitelist.
+    - Enabled by default.
+  - ***whitelist.message***
+    - Changes the default message *"This server is whitelisted and you are not on the whitelist."*
 
 
 ---
