@@ -8,8 +8,8 @@ local world_path = minetest.get_worldpath()
 local admin = minetest.settings:get("name")
 local whitelist = {}
 
--- Enabled by default
-local enabled = minetest.settings:get_bool("whitelist.enable") ~= false
+-- Disabled by default
+local enabled = minetest.settings:get_bool("whitelist.enable") == true
 local deny_message = minetest.settings:get("whitelist.message") or "This server is whitelisted and you are not on the whitelist."
 
 local function load_whitelist()

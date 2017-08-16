@@ -16,7 +16,7 @@ Original [White List][] mod by ShadowNinja.
 - Settings:
   - ***whitelist.enable***
     - Enables/Disables denying access to users not on the whitelist.
-    - Enabled by default.
+    - Disabled by default.
   - ***whitelist.message***
     - Changes the default message *"This server is whitelisted and you are not on the whitelist."*
 
