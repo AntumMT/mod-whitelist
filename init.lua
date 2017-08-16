@@ -9,6 +9,7 @@ local whitelist = {}
 
 -- Enabled by default
 local enabled = minetest.settings:get_bool("whitelist.enable") ~= false
+local deny_message = minetest.settings:get("whitelist.message") or "This server is whitelisted and you are not on the whitelist."
 
 local function load_whitelist()
 	local file, err = io.open(world_path.."/whitelist.txt", "r")
@@ -39,7 +40,7 @@ if enabled then
 		if name == "singleplayer" or name == admin or whitelist[name] then
 			return
 		end
-		return "This server is whitelisted and you are not on the whitelist."
+		return deny_message
 	end)
 end
 
