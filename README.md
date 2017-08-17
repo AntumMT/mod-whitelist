@@ -25,4 +25,10 @@ This is a simple Minetest mod that adds a player whitelist. Any player names not
 CC0
 
 
+---
+### **TODO:**
+
+- Access whitelist in realtime so can be edited while server is running.
+
+
 [Minetest]: http://www.minetest.net/
