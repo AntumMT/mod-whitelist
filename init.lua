@@ -9,10 +9,13 @@
 local world_path = core.get_worldpath()
 local admin = core.settings:get("name")
 local whitelist = {}
+whitelist.modname = core.get_current_modname()
+
+local S = core.get_translator(whitelist.modname)
 
 -- Enabled by default
 local enabled = core.settings:get_bool("whitelist.enable", true)
-local deny_message = core.settings:get("whitelist.message") or "This server is whitelisted and you are not on the whitelist."
+local deny_message = core.settings:get("whitelist.message") or S("This server is whitelisted and you are not on the whitelist.")
 
 local function load_whitelist()
 	local file, err = io.open(world_path .. "/whitelist.txt", "r")
@@ -49,28 +52,28 @@ end
 
 core.register_chatcommand("whitelist", {
 	params = "{add|remove} <nick>",
-	help = "Manipulate the whitelist",
+	help = S("Manipulate the whitelist"),
 	privs = {ban=true},
 	func = function(name, param)
 		local action, whitename = param:match("^([^ ]+) ([^ ]+)$")
 		if action == "add" then
 			if whitelist[whitename] then
-				return false, whitename .. " is already on the whitelist."
+				return false, S("@1 is already on the whitelist.", whitename)
 			end
 
 			whitelist[whitename] = true
 			save_whitelist()
-			return true, "Added " .. whitename .. " to the whitelist."
+			return true, S("Added @1 to the whitelist.", whitename)
 		elseif action == "remove" then
 			if not whitelist[whitename] then
-				return false, whitename .. " is not on the whitelist."
+				return false, S("@1 is not on the whitelist.", whitename)
 			end
 
 			whitelist[whitename] = nil
 			save_whitelist()
-			return true, "Removed " .. whitename .. " from the whitelist."
+			return true, S("Removed @1 from the whitelist.", whitename)
 		else
-			return false, "Invalid action."
+			return false, S("Invalid action.")
 		end
 	end,
 })

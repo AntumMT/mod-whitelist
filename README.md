@@ -31,7 +31,7 @@ Settings:
 
 ### Requirements:
 
-- Minimum Minetest version: 0.4.16
+- Minimum Minetest version: 5.0.0
 - Depends: none
 - Optional depends: none
 
