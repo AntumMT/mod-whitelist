@@ -4,13 +4,13 @@
 -- License: CC0
 --]]
 
-local world_path = minetest.get_worldpath()
-local admin = minetest.settings:get("name")
+local world_path = core.get_worldpath()
+local admin = core.settings:get("name")
 local whitelist = {}
 
 -- Enabled by default
-local enabled = minetest.settings:get_bool("whitelist.enable") ~= false
-local deny_message = minetest.settings:get("whitelist.message") or "This server is whitelisted and you are not on the whitelist."
+local enabled = core.settings:get_bool("whitelist.enable") ~= false
+local deny_message = core.settings:get("whitelist.message") or "This server is whitelisted and you are not on the whitelist."
 
 local function load_whitelist()
 	local file, err = io.open(world_path.."/whitelist.txt", "r")
@@ -35,7 +35,7 @@ local function save_whitelist()
 end
 
 if enabled then
-	minetest.register_on_prejoinplayer(function(name, ip)
+	core.register_on_prejoinplayer(function(name, ip)
 		load_whitelist()
 		if name == "singleplayer" or name == admin or whitelist[name] then
 			return
@@ -44,7 +44,7 @@ if enabled then
 	end)
 end
 
-minetest.register_chatcommand("whitelist", {
+core.register_chatcommand("whitelist", {
 	params = "{add|remove} <nick>",
 	help = "Manipulate the whitelist",
 	privs = {ban=true},
