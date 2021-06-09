@@ -27,7 +27,7 @@ Settings:
 
 ### Licensing:
 
-CC0
+- Code: [MIT](LICENSE.txt)
 
 ### Requirements:
 
