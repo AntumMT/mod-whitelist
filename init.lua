@@ -9,7 +9,7 @@ local admin = core.settings:get("name")
 local whitelist = {}
 
 -- Enabled by default
-local enabled = core.settings:get_bool("whitelist.enable") ~= false
+local enabled = core.settings:get_bool("whitelist.enable", true)
 local deny_message = core.settings:get("whitelist.message") or "This server is whitelisted and you are not on the whitelist."
 
 local function load_whitelist()
