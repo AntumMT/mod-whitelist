@@ -17,6 +17,7 @@ Commands:
 	- Manages the whitelist.
 	- Without parameters: displays all whitelisted names
 	- commands:
+		- *query:* checks if a name is whitelisted
 		- *add:* adds a name to whitelist
 		- *remove:* removes a names from whitelist
 	- *name:* name of player

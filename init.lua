@@ -74,7 +74,16 @@ core.register_chatcommand("whitelist", {
 			return false, S("Must supply name parameter.")
 		end
 
-		if action == "add" then
+		if action == "query" then
+			local msg
+			if whitelist[whitename] then
+				msg = S("@1 is already on the whitelist.", whitename)
+			else
+				msg = S("@1 is not on the whitelist.", whitename)
+			end
+
+			return true, msg
+		elseif action == "add" then
 			if whitelist[whitename] then
 				return false, S("@1 is already on the whitelist.", whitename)
 			end

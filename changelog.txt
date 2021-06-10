@@ -4,6 +4,7 @@ v1.1
 - changed license to MIT
 - added localization support
 - executing "/whitelist" without parameters displays all whitelisted names
+- added command "query" to check if a name is whitelisted
 
 v1.0
 ----
