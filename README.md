@@ -29,6 +29,8 @@ Settings:
 - ***whitelist.message***
 	- Changes the default message *"This server is whitelisted and you are not on the whitelist."*
 
+The *whitelist.txt* file is reloaded whenever a player attempts to log on. So it can be edited without the need to restart the server.
+
 ### Licensing:
 
 - Code: [MIT](LICENSE.txt)
