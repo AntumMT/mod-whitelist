@@ -9,9 +9,8 @@
 local world_path = core.get_worldpath()
 local admin = core.settings:get("name")
 local whitelist = {}
-whitelist.modname = core.get_current_modname()
 
-local S = core.get_translator(whitelist.modname)
+local S = core.get_translator(core.get_current_modname())
 
 -- Enabled by default
 local enabled = core.settings:get_bool("whitelist.enable", true)
