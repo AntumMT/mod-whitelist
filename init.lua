@@ -50,11 +50,30 @@ if enabled then
 end
 
 core.register_chatcommand("whitelist", {
-	params = "{add|remove} <nick>",
+	params = "[{add|remove} <name>]",
 	help = S("Manipulate the whitelist"),
 	privs = {ban=true},
 	func = function(name, param)
-		local action, whitename = param:match("^([^ ]+) ([^ ]+)$")
+		local action, whitename
+		if param:find(" ") then
+			action, whitename = param:match("^([^ ]+) ([^ ]+)$")
+		else
+			action = param
+		end
+
+		if action == "" then
+			local names = {}
+			for k, v in pairs(whitelist) do
+				table.insert(names, k)
+			end
+
+			return true, S("Whitelisted names: @1", table.concat(names, ", "))
+		end
+
+		if not whitename then
+			return false, S("Must supply name parameter.")
+		end
+
 		if action == "add" then
 			if whitelist[whitename] then
 				return false, S("@1 is already on the whitelist.", whitename)
@@ -71,8 +90,8 @@ core.register_chatcommand("whitelist", {
 			whitelist[whitename] = nil
 			save_whitelist()
 			return true, S("Removed @1 from the whitelist.", whitename)
-		else
-			return false, S("Invalid action.")
 		end
+
+		return false, S("Invalid action: @1", action)
 	end,
 })

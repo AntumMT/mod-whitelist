@@ -13,10 +13,13 @@ Forked from ShadowNinja's original [White List][].
 Whitelist can be updated by editing *whitelist.txt* in the world directory or by issuing the following in-game commands. The *ban* privilege is required for issuing chat commands.
 
 Commands:
-- ***/whitelist add <name>***
-	- Adds a username to whitelist & allows access to server.
-- ***/whitelist remove <name>***
-	- Removes a username from whitelist & denies access to server.
+- ***/whitelist [&lt;command&gt; &lt;name&gt;]***
+	- Manages the whitelist.
+	- Without parameters: displays all whitelisted names
+	- commands:
+		- *add:* adds a name to whitelist
+		- *remove:* removes a names from whitelist
+	- *name:* name of player
 
 Settings:
 - ***whitelist.enable***

@@ -7,4 +7,5 @@ Manipulate the whitelist=
 Added @1 to the whitelist.=
 @1 is not on the whitelist.=
 Removed @1 from the whitelist.=
-Invalid action.=
+Must supply name parameter.=
+Invalid action: @1=

@@ -1,4 +1,3 @@
 
 TODO:
 - add command parameter "query" to check for a whitelisted name
-- add command parameter to display all whitelisted names
