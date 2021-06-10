@@ -43,6 +43,7 @@ Settings:
 
 - [![ContentDB](https://content.minetest.net/packages/AntumDeluge/whitelist/shields/title/)](https://content.minetest.net/packages/AntumDeluge/whitelist/)
 - [Forum](https://forum.minetest.net/viewtopic.php?t=18325)
+- [Git repo](https://github.com/AntumMT/mod-whitelist)
 - [Changelog](changelog.txt)
 - [TODO](TODO.txt)
 
