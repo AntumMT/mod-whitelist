@@ -1,4 +1,9 @@
 
+next
+----
+- added "textdomain" line to localization template
+
+
 v1.1
 ----
 - changed license to MIT
@@ -6,9 +11,11 @@ v1.1
 - executing "/whitelist" without parameters displays all whitelisted names
 - added command "query" to check if a name is whitelisted
 
+
 v1.0
 ----
 - changed title to "Whiter List"
+
 
 v0.1
 ----

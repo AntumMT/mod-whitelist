@@ -1,4 +1,6 @@
-# Translated by:
+# textdomain:whitelist
+
+# Translators:
 
 
 This server is whitelisted and you are not on the whitelist.=
