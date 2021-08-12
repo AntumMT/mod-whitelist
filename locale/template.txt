@@ -4,7 +4,7 @@
 
 
 This server is whitelisted and you are not on the whitelist.=
-Manipulate the whitelist=
+Manage the whitelist=
 @1 is already on the whitelist.=
 Added @1 to the whitelist.=
 @1 is not on the whitelist.=
