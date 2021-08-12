@@ -6,7 +6,7 @@ A [Minetest][] mod that adds a simple player whitelist. Any player names not fou
 
 Forked from ShadowNinja's original [White List][].
 
-![icon](icon.png)
+![icon](screenshot.png)
 
 ### Usage:
 
