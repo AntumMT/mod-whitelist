@@ -2,6 +2,7 @@
 next
 ----
 - added "textdomain" line to localization template
+- changed default access denied message
 
 
 v1.1

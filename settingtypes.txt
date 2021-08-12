@@ -3,4 +3,4 @@
 whitelist.enable (Enable whitelist) bool true
 
 # Sets a custom message to display when access to server is denied.
-whitelist.message (Whitelist message) string This server is whitelisted and you are not on the whitelist.
+whitelist.message (Whitelist message) string Server access is restricted to whitelisted players only.

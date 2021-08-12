@@ -27,7 +27,7 @@ Settings:
 	- Enables/Disables denying access to users not on the whitelist.
 	- Enabled by default.
 - ***whitelist.message***
-	- Changes the default message *"This server is whitelisted and you are not on the whitelist."*
+	- Changes the default message *"Server access is restricted to whitelisted players only."*
 
 The *whitelist.txt* file is reloaded whenever a player attempts to log on. So it can be edited without the need to restart the server.
 

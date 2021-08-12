@@ -14,7 +14,7 @@ local S = core.get_translator(core.get_current_modname())
 
 -- Enabled by default
 local enabled = core.settings:get_bool("whitelist.enable", true)
-local deny_message = core.settings:get("whitelist.message") or S("This server is whitelisted and you are not on the whitelist.")
+local deny_message = S(core.settings:get("whitelist.message")) or S("Server access is restricted to whitelisted players only.")
 
 local function load_whitelist()
 	local file, err = io.open(world_path .. "/whitelist.txt", "r")
