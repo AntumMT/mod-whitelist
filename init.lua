@@ -52,7 +52,7 @@ end
 
 core.register_chatcommand("whitelist", {
 	params = "[{add|remove} <" .. S("name") .. ">]",
-	help = S("Manage the whitelist."),
+	description = S("Manage the whitelist."),
 	privs = {ban=true},
 	func = function(name, param)
 		local action, whitename
