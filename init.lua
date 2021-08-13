@@ -51,7 +51,7 @@ if enabled then
 end
 
 core.register_chatcommand("whitelist", {
-	params = "[{add|remove} <name>]",
+	params = "[{add|remove} <" .. S("name") .. ">]",
 	help = S("Manage the whitelist."),
 	privs = {ban=true},
 	func = function(name, param)
