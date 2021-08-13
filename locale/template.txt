@@ -11,3 +11,4 @@ Added @1 to the whitelist.=
 Removed @1 from the whitelist.=
 Must supply name parameter.=
 Invalid action: @1=
+Whitelisted names: @1=
