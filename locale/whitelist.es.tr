@@ -1,0 +1,15 @@
+# textdomain:whitelist
+
+# Translators: Jordan Irwin (AntumDeluge)
+
+
+Server access is restricted to whitelisted players only.=El acceso al servidor está limitado a los jugadores incluidos en la lista blanca solamente.
+Manage the whitelist.=Administrar la lista blanca.
+@1 is already on the whitelist.=Ya estaba en la lista blanca @1.
+Added @1 to the whitelist.=Se agregó @1 a la lista blanca.
+@1 is not on the whitelist.=No está @1 en la lista blanca.
+Removed @1 from the whitelist.=Se quitó a @1 de la lista blanca.
+Must supply name parameter.=Se requiere el parametro "name".
+Invalid action: @1=Acción invalido: @1
+Whitelisted names: @1=Nombres en la lista blanca: @1
+name=nombre
