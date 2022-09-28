@@ -25,7 +25,10 @@ local function load_whitelist()
 	whitelist = {}
 
 	for line in file:lines() do
-		whitelist[line] = true
+		-- ignore lines with whitespace only
+		if line:gsub("%s+", "") ~= "" then
+			whitelist[line] = true
+		end
 	end
 
 	file:close()
