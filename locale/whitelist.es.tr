@@ -13,3 +13,4 @@ Must supply name parameter.=Se requiere el parametro "name".
 Invalid action: @1=Acción invalido: @1
 Whitelisted names: @1=Nombres en la lista blanca: @1
 name=nombre
+Could not open whitelist file for writing: @1=No se pudo abrir la lista blanca para escribir: @1

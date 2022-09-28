@@ -13,3 +13,4 @@ Must supply name parameter.=
 Invalid action: @1=
 Whitelisted names: @1=
 name=
+Could not open whitelist file for writing: @1=

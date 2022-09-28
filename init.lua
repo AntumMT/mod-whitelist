@@ -21,8 +21,9 @@ deny_message = S(deny_message)
 --- Loads whitelisted names into memory.
 local function load_whitelist()
 	local file, err = io.open(world_path .. "/whitelist.txt", "r")
-	-- FIXME: need error message & to return empty table
 	if err then return end
+
+	-- FIXME: error if "whitelist.txt" is a directory
 
 	-- reset for session in case names have been manually removed
 	whitelist = {}
@@ -41,8 +42,10 @@ end
 --- Writes whitelisted names to file.
 local function save_whitelist()
 	local file, err = io.open(world_path .. "/whitelist.txt", "w")
-	-- FIXME: need error message
-	if err then return end
+	if err then
+		core.log("error", S("Could not open whitelist file for writing: @1", err))
+		return
+	end
 
 	for item in pairs(whitelist) do
 		file:write(item .. "\n")
