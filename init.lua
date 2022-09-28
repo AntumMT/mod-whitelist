@@ -21,6 +21,9 @@ local function load_whitelist()
 	local file, err = io.open(world_path .. "/whitelist.txt", "r")
 	if err then return end
 
+	-- reset for session in case names have been manually removed
+	whitelist = {}
+
 	for line in file:lines() do
 		whitelist[line] = true
 	end
