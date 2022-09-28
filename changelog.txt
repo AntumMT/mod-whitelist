@@ -4,6 +4,7 @@ next
 - check for singleplayer with core function instead of hardcoded "singleplayer"
 - whitelist memory is reset before loading from file on player login
   - allows names to be removed manually from file while sessions is active
+- whitelist is reloaded from file before chat command execution
 
 
 v1.2

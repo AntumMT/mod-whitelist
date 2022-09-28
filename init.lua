@@ -17,8 +17,11 @@ local enabled = core.settings:get_bool("whitelist.enable", true)
 local deny_message = core.settings:get("whitelist.message") or "Server access is restricted to whitelisted players only."
 deny_message = S(deny_message)
 
+
+--- Loads whitelisted names into memory.
 local function load_whitelist()
 	local file, err = io.open(world_path .. "/whitelist.txt", "r")
+	-- FIXME: need error message & to return empty table
 	if err then return end
 
 	-- reset for session in case names have been manually removed
@@ -34,8 +37,11 @@ local function load_whitelist()
 	file:close()
 end
 
+
+--- Writes whitelisted names to file.
 local function save_whitelist()
 	local file, err = io.open(world_path .. "/whitelist.txt", "w")
+	-- FIXME: need error message
 	if err then return end
 
 	for item in pairs(whitelist) do
@@ -44,6 +50,7 @@ local function save_whitelist()
 
 	file:close()
 end
+
 
 if enabled then
 	core.register_on_prejoinplayer(function(name, ip)
@@ -67,6 +74,9 @@ core.register_chatcommand("whitelist", {
 		else
 			action = param
 		end
+
+		-- update whitelist from file before performing actions
+		load_whitelist()
 
 		if action == "" then
 			local names = {}
