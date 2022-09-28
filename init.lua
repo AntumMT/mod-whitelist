@@ -42,7 +42,7 @@ end
 if enabled then
 	core.register_on_prejoinplayer(function(name, ip)
 		load_whitelist()
-		if name == "singleplayer" or name == admin or whitelist[name] then
+		if core.is_singleplayer() or name == admin or whitelist[name] then
 			return
 		end
 

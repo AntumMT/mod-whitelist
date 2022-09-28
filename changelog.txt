@@ -1,4 +1,8 @@
 
+next
+----
+- check for singleplayer with core function instead of hardcoded "singleplayer"
+
 v1.2
 ----
 - added "textdomain" line to localization template
