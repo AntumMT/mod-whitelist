@@ -1,5 +1,5 @@
 
-next
+v1.3
 ----
 - check for singleplayer with core function instead of hardcoded "singleplayer"
 - whitelist memory is reset before loading from file on player login
