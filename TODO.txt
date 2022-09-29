@@ -1,2 +1,3 @@
 
 TODO:
+- no longer need to store list in memory since file is re-read for every action
