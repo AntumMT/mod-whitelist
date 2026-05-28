@@ -45,7 +45,10 @@ The *whitelist.txt* file is reloaded whenever a player attempts to log on. So it
 
 - [![ContentDB](https://content.luanti.org/packages/AntumDeluge/whitelist/shields/title/)](https://content.luanti.org/packages/AntumDeluge/whitelist/)
 - [Forum](https://forum.luanti.org/viewtopic.php?t=18325)
-- [Git repo](https://github.com/AntumMT/mod-whitelist)
+- Git repos:
+    - [Codeberg](https://codeberg.org/AntumLuanti/mod-whitelist)
+    - [GitHub](https://github.com/AntumMT/mod-whitelist)
+    - [GitLab](https://gitlab.com/AntumMT/mod-whitelist)
 - [Changelog](changelog.txt)
 - [TODO](TODO.txt)
 
