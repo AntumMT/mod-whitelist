@@ -4,7 +4,7 @@
 
 A [Luanti] mod that adds a simple player whitelist. Any player names not found in the whitelist are denied access to the server.
 
-Forked from ShadowNinja's original [White List][].
+Forked from ShadowNinja's original [White List].
 
 ![icon](screenshot.png)
 
