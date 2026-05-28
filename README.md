@@ -1,8 +1,8 @@
-## Whiter List (*whitelist*) mod for Minetest
+## Whiter List (*whitelist*) mod for Luanti
 
 ### Description:
 
-A [Minetest][] mod that adds a simple player whitelist. Any player names not found in the whitelist are denied access to the server.
+A [Luanti] mod that adds a simple player whitelist. Any player names not found in the whitelist are denied access to the server.
 
 Forked from ShadowNinja's original [White List][].
 
@@ -37,18 +37,18 @@ The *whitelist.txt* file is reloaded whenever a player attempts to log on. So it
 
 ### Requirements:
 
-- Minimum Minetest version: 5.0.0
+- Minimum Luanti version: 5.0.0
 - Depends: none
 - Optional depends: none
 
 ### Links:
 
-- [![ContentDB](https://content.minetest.net/packages/AntumDeluge/whitelist/shields/title/)](https://content.minetest.net/packages/AntumDeluge/whitelist/)
-- [Forum](https://forum.minetest.net/viewtopic.php?t=18325)
+- [![ContentDB](https://content.luanti.org/packages/AntumDeluge/whitelist/shields/title/)](https://content.luanti.org/packages/AntumDeluge/whitelist/)
+- [Forum](https://forum.luanti.org/viewtopic.php?t=18325)
 - [Git repo](https://github.com/AntumMT/mod-whitelist)
 - [Changelog](changelog.txt)
 - [TODO](TODO.txt)
 
 
-[Minetest]: http://www.minetest.net/
-[White List]: https://forum.minetest.net/viewtopic.php?t=8434
+[Luanti]: https://www.luanti.org/
+[White List]: https://forum.luanti.org/viewtopic.php?t=8434
