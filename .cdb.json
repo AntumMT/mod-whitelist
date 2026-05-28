@@ -1,0 +1,19 @@
+{
+	"type": "MOD",
+	"title": "Whiter List",
+	"name": "whitelist",
+	"short_description": "Restrict server access to only whitelisted players.",
+	"dev_state": "MAINTENANCE_ONLY",
+	"ai_disclosure": "NONE",
+	"tags": ["multiplayer", "server_tools"],
+	"content_warnings": null,
+	"license": "MIT",
+	"media_license": "MIT",
+	"repo": "https://codeberg.org/AntumLuanti/mod-whitelist",
+	"website": null,
+	"issue_tracker": "https://codeberg.org/AntumLuanti/mod-whitelist/issues",
+	"forums": 18325,
+	"video_url": null,
+	"donate_url": null,
+	"translation_url": null
+}
